@@ -5,7 +5,7 @@ import Leftzone from "../Leftzone/Leftzone";
 const LeftNav = () => {
     const [categories, setCategories] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://the-dragon-news-server-chs90qycr-sagor-rayhans-projects.vercel.app/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error))
